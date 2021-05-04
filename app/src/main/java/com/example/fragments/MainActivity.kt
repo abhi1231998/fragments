@@ -15,13 +15,15 @@ class MainActivity : AppCompatActivity() {
 
         val list = ArrayList<Fragment>()
         list.add(FirstFragment())
-        list.add(SecondFragment())
-        list.add(ThirdFragment())
+        list.add(FirstFragment())
+        list.add(FirstFragment())
 
 
         view_pager.apply {
             adapter = ViewPagerAdapter(supportFragmentManager, list)
         }
+
+        view_pager.offscreenPageLimit = 3
 
         tab_layout.setupWithViewPager(view_pager)
     }

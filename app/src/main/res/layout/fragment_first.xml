@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <TextView
@@ -13,6 +14,41 @@
         app:layout_constraintStart_toStartOf="parent"
         android:padding="16dp"
         app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/fragment1"
         />
 
+    <EditText
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/fragment1"
+        app:layout_constraintEnd_toEndOf="@+id/fragment1"
+        app:layout_constraintStart_toStartOf="@+id/fragment1"
+        android:hint="Enter the number"
+        android:id="@+id/edittextfragment1"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/edittextfragment1"
+        app:layout_constraintStart_toStartOf="@+id/edittextfragment1"
+        app:layout_constraintEnd_toEndOf="@id/edittextfragment1"
+        android:text="Itself"
+        android:textAllCaps="false"
+        android:id="@+id/buttonfragment1"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/buttonfragment1"
+        app:layout_constraintStart_toStartOf="@id/buttonfragment1"
+        app:layout_constraintEnd_toEndOf="@id/buttonfragment1"
+        tools:text="testing textview"
+        android:layout_marginTop="24dp"
+        android:textSize="24sp"
+        android:id="@+id/textviewFragment1"
+
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>
