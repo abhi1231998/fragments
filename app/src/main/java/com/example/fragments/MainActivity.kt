@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.example.fragments.fragments.FirstFragment
 import com.example.fragments.fragments.SecondFragment
+import com.example.fragments.fragments.ThirdFragment
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -15,6 +16,7 @@ class MainActivity : AppCompatActivity() {
         val list = ArrayList<Fragment>()
         list.add(FirstFragment())
         list.add(SecondFragment())
+        list.add(ThirdFragment())
 
 
         view_pager.apply {

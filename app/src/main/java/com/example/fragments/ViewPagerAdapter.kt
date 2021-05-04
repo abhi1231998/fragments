@@ -20,6 +20,7 @@ class ViewPagerAdapter(fragmentManager: FragmentManager, val fragments : ArrayLi
         return when(position){
             0 -> "First"
             1 -> "Second"
+            2 -> "Third"
             else -> "Unknown"
         }
     }
